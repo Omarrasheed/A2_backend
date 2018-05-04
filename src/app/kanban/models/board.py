@@ -19,3 +19,8 @@ class Board_Element(Base):
   category       = db.Column(db.String(256), nullable = False)
   description    = db.Column(db.String(256), nullable = False)
   board_id       = db.Column(db.Integer, db.ForeignKey('boards.id'))
+
+  def __init__(self, **kwargs):
+    self.category = kwargs.get('category', None)
+    self.description = kwargs.get('description', None)
+    self.board_id = kwargs.get('board_id', None)
