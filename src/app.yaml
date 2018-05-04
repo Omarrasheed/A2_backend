@@ -1,0 +1,13 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /boards
+  script: __init__.app
+  
+- url: /board_elements
+  script: __init__.app
+  
+- url: /board_elements/advance
+  script: __init__.app
