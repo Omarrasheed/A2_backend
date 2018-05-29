@@ -22,7 +22,7 @@ pathtools==0.1.2
 pyparsing==2.2.0
 python-dateutil==2.7.2
 python-editor==1.0.3
-PyYAML==3.12
+PyYAML==3.12 --no-build-isolation
 simplejson==3.14.0
 SQLAlchemy==1.1.9
 watchdog==0.8.3
